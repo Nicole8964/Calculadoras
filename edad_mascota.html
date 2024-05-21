@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Edad</title>
+    <link rel="stylesheet" href="estilos2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container2">
+        <h1 class="poetsen-one-regular">Calculadora de Mascota (Edad)</h1>
+        <img src="perro.jpg" alt="">
+        <div id="calculadora">
+            <h2 class="poetsen-one-regular">Inserte la edad de su mascota:</h2>
+            <br>
+            <input type="number" id="edad" placeholder="Años">
+            <br>
+            <br>
+            <button type="reset" onclick="resetearEdad()">Resetear</button>
+            <br>
+            <br>
+            <br>
+            <button onclick="calculateEDAD()">Calcular edad (formúla actual)</button>
+            <button onclick="calculateEdad()">Calcular edad (formúla 7 años)</button>
+            <div id="resultado"></div>
+        </div>
+    </div>
+    <script src="edad.js"></script>
+</body>
+</html>
